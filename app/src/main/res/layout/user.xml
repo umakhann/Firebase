@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firebaselog"
+
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:letterSpacing="0.05"
+            android:text="You are logged in"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/email_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta_stencil"
+
+            android:textSize="15sp"
+            tools:text="Your email: umakhan.shahin@gmail.com" />
+
+
+        <TextView
+            android:id="@+id/name_info"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:textSize="15sp"
+
+            tools:text="Your name: Shahin Umakhan" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/button_shape"
+            android:drawableStart="@drawable/ic_right"
+            android:fontFamily="@font/allerta_stencil"
+            android:paddingStart="30dp"
+
+            android:paddingTop="15dp"
+
+            android:paddingEnd="30dp"
+            android:paddingBottom="15dp"
+
+
+            android:text="LOG OUT" />
+
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/listview"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            tools:itemCount="2"-->
+        <!--            tools:listitem="@layout/support_simple_spinner_dropdown_item" />-->
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

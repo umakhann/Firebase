@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firebaselog" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:transitionName="header_transition"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:letterSpacing="0.1"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:hint="@string/name_hint"
+
+            app:endIconMode="clear_text"
+
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+
+            app:startIconDrawable="@drawable/custom_person_icons"
+            tools:focusedByDefault="true"
+            tools:helperText="Passwords match"
+
+
+            >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/allerta_stencil"
+                android:inputType="textPersonName"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mail_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:hint="@string/email_hint"
+
+            app:endIconMode="clear_text"
+
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+
+
+            app:startIconDrawable="@drawable/custom_email_icons"
+            tools:focusedByDefault="true"
+            tools:helperText="Passwords match"
+
+
+            >
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/allerta_stencil"
+                android:inputType="textPersonName"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwd_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+
+            android:fontFamily="@font/allerta_stencil"
+
+            android:hint="@string/password_hint"
+            app:endIconMode="password_toggle"
+
+
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/custom_pwd_icons"
+
+            >
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/allerta_stencil"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+
+
+            android:fontFamily="@font/allerta_stencil"
+
+            android:hint="@string/confirm_hint"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/purple_700"
+            app:startIconDrawable="@drawable/custom_pwd_icons"
+            tools:helperText="Passwords match"
+
+            >
+
+            <EditText
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/allerta_stencil"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:transitionName="button_transition"
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_shape"
+            android:drawableEnd="@drawable/ic_right"
+
+            android:fontFamily="@font/allerta_stencil"
+            android:paddingStart="30dp"
+
+            android:paddingTop="15dp"
+            android:paddingEnd="30dp"
+
+            android:paddingBottom="15dp"
+            android:text="SIGN UP" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:fontFamily="@font/allerta_stencil"/>
+
+            <TextView
+                android:id="@+id/go_to_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/allerta_stencil"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/back_button"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

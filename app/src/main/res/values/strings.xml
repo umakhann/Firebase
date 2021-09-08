@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="client_id">662088435011-p4pflipepl9h9pmpaarou2mujgdunj76.apps.googleusercontent.com</string>
+
+    <string name="password_hint">PASSWORD</string>
+    <string name="email_hint">EMAIL</string>
+    <string name="name_hint">FULL NAME</string>
+    <string name="confirm_hint">CONFIRM PASSWORD</string>
+
+</resources>

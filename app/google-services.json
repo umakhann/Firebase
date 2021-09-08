@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "662088435011",
+    "firebase_url": "https://fir-f9525-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fir-f9525",
+    "storage_bucket": "fir-f9525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662088435011:android:59a2ccf867299119a3dbf6",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662088435011-p4pflipepl9h9pmpaarou2mujgdunj76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj-IJgVx9i9bdAdpWuYD44UIQTRCRGGjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662088435011-p4pflipepl9h9pmpaarou2mujgdunj76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
