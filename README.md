@@ -1,8 +1,8 @@
 # About Firebase
-Firebase is a very simple login application where it is possible to sign up and in.
+Firebase is a very simple login application where I used Firebase Auth, Firestore Database, and simple Unit Testing to register and log in a user.
 
 
-# Libraries & Features
+# Libraries
 - Firebase Auth
 - Firestore DB
 - JUnit
