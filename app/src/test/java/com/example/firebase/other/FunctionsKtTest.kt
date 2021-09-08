@@ -9,8 +9,6 @@ import org.junit.runner.RunWith
 
 class FunctionsKtTest{
 
-
-
     @Test
     fun `name smaller than 3 returns false`(){
         val result = validateRegistration("as",
